@@ -1,0 +1,25 @@
+{
+  "name": "berghain",
+  "version": "1.0.0",
+  "description": "Validation library",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Grinv/berghain.git"
+  },
+  "keywords": [
+    "validation"
+  ],
+  "author": "Konstantin Ostrovskii",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Grinv/berghain/issues"
+  },
+  "homepage": "https://github.com/Grinv/berghain#readme",
+  "devDependencies": {
+    "vitest": "^1.6.0"
+  }
+}
