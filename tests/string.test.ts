@@ -1,6 +1,6 @@
 // sum.test.js
 import { expect, test } from "vitest";
-import { string } from "../src/string";
+import { StringSchema as string } from "../src/string";
 
 test("string", () => {
   const schema = new string();

@@ -2,9 +2,12 @@
   "name": "berghain",
   "version": "1.0.0",
   "description": "Validation library",
-  "main": "index.js",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/src/index.d.ts",
   "scripts": {
-    "test": "vitest"
+    "test": "vitest",
+    "build": "rimraf ./dist && rollup -c"
   },
   "repository": {
     "type": "git",
@@ -20,6 +23,12 @@
   },
   "homepage": "https://github.com/Grinv/berghain#readme",
   "devDependencies": {
-    "vitest": "^1.6.0"
+    "@rollup/plugin-terser": "0.4.4",
+    "@rollup/plugin-typescript": "11.1.6",
+    "rimraf": "5.0.7",
+    "rollup": "4.18.0",
+    "tslib": "2.6.3",
+    "typescript": "5.5.2",
+    "vitest": "1.6.0"
   }
 }

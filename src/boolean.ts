@@ -1,14 +1,15 @@
-export class string {
-  #chain = [];
-  #value;
-  #isValid = true;
+type ChainType = () => void;
+export class BooleanSchema {
+  #chain: ChainType[] = [];
+  #value: unknown;
+  #isValid: boolean = true;
 
   constructor() {
     this.#chain.push(this.#string);
     return this;
   }
 
-  validate(value) {
+  validate(value: unknown) {
     this.#value = value;
     this.#isValid = true;
 
@@ -22,8 +23,8 @@ export class string {
     return this.#isValid;
   }
 
-  nullable() {
-    this.#chain.push(this.#nullable);
+  true() {
+    this.#chain.push(this.#true);
     return this;
   }
 
@@ -37,7 +38,7 @@ export class string {
     }
   }
 
-  #nullable() {
+  #true() {
     console.log("try nullable", this.#value);
     if (this.#value !== null) {
       console.log("WRONG!");

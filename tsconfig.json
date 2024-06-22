@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "noEmitOnError": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "strict": true,
+    "esModuleInterop": false,
+    "outDir": "dist",
+    "rootDir": "./",
+    "declaration": true
+  },
+  "include": ["./src/**/*.ts"]
+}
